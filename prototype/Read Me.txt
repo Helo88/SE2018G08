@@ -1,0 +1,4 @@
+user name :g8user
+pasword :group8
+company name :g8company
+password:group8
