@@ -14,18 +14,6 @@
 
 
 <h2> SE2018 G08</h2>
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th, td {
-  padding: 5px;
-}
-th {
-  text-align: left;
-}
-</style>
 
 
 
