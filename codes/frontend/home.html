@@ -4,10 +4,15 @@
         <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>You Tour</title>
+		<link  rel="stylesheet" href="css/all.css">
+		<link  rel="stylesheet" href="css/all.min.css">
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/home.css">
-		
+		<script defer src="js/all.js"></script>
+		<script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+   
     </head>
     
     <body>
@@ -37,7 +42,9 @@
 			</form>
 			</li>
 			<li class="nav-link">
-				<button type="button" class="btn btn-outline-primary">log in</button>
+				<button style="background-color: #333333;" data-toggle="modal" data-target="#comoruser">
+					<a style="color: blue;font-size: 25px;" href="#"><i class="fas fa-user"></i></a>
+				</button>
 			</li>
 			</ul>
 		  </div>
@@ -58,7 +65,7 @@
               <div class="carousel-caption text-left">
                 <h1>Welcome to You Tour site </h1>
                 <p>sign up and get more tours and more offers </p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button "data-toggle="modal" data-target="#usersignup">Sign up today</a></p>
               </div>
             </div>
           </div>
@@ -66,8 +73,8 @@
             <img class="second-slide" src="img/p2.jpg" alt="Second slide">
             <div class="container">
               <div class="carousel-caption">
-                <h1 style="color:#0056b3;">About Site</h1>
-                <p style="color:#ff0000;">we devolped this site to make it easy to you to compare tour programs and choose the best one .
+                <h1 style="color:#ffffff;">About Site</h1>
+                <p style="color:#ffffff;">we devolped this site to make it easy to you to compare tour programs and choose the best one .
 				more and more companies show thier programs here </p>
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
               </div>
@@ -93,12 +100,176 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-<!--..............................footer.................!-->
-
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-    </body>       
-
+ 
+ <!--...................... FOOTER.................. -->
+    
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2018-2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+                         <!--................................modals........................!-->
+						 
+						 
+	<!--...........................company or user...................!-->
+		<div class="modal" id="comoruser">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+		
+			  <!-- Modal Header -->
+			  <div class="modal-header ">
+				<h4 class="modal-title">Sign In As</h4>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			  </div>
+		
+			  <!-- Modal body -->
+			  <div class="modal-body row">
+				<div class=" col" >
+			   <button  class="btn btn-outline-success my-2 my-sm-0 col "data-dismiss="modal" data-toggle="modal" data-target="#comsign"> company </button>
+			   </div><div class=" col">
+					  <button class="btn btn-outline-success my-2 my-sm-0 col" data-dismiss="modal" data-toggle="modal" data-target="#usersign"> user </button>
+			  </div>
+				</div>
+		
+			  <!-- Modal footer -->
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+			  </div>
+		
+			</div>
+		  </div>
+		</div>
+		
+		<!--............................................usersign in..........................................!-->
+		<div class="modal fade" id="usersign" role="dialog">
+			<div class="modal-dialog">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+				 <!-- Modal Header -->
+				<div class="modal-header " style="background-color: #5cb85c; ">
+					<h4 style="font-size: 30px; color: #ffffff; text-align: center;"><span><i class="fas fa-user"></i></span> Login </h4>
+				  <button type="button " class="close" data-dismiss="modal">&times;</button>
+				  
+				</div>
+				 <!-- Modal body -->
+				<div class="modal-body" style="padding:40px 50px;">
+				  <form role="form">
+					<div class="form-group">
+					  <label for="usrname">Username</label>
+					  <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+					</div>
+					<div class="form-group">
+					  <label for="psw"> Password</label>
+					  <input type="password" class="form-control" id="userpsw" placeholder="Enter password">
+					</div>
+					<div class="checkbox">
+					  <label><input type="checkbox" value="" checked>Remember me</label>
+					</div>
+					  <button type="submit" class="btn btn-success btn-block"> Login</button>
+				  </form>
+				</div>
+				 <!-- Modal footer -->
+				<div class="modal-footer  ">
+				 <div class="col"> <p>Not a member? <a data-toggle="modal" data-target="#usersignup" href="#"data-dismiss="modal">Sign Up</a></p></div>
+				  <div class="col"><p>Forgot <a href="#">Password?</a></p></div>
+				</div>
+			  </div>
+			  
+			</div>
+		  </div> 
+	
+<!--............................................com sign in..........................................!-->
+		<div class="modal fade" id="comsign" role="dialog">
+			<div class="modal-dialog">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+				 <!-- Modal Header -->
+				<div class="modal-header " style="background-color: #5cb85c; ">
+					<h4 style="font-size: 30px; color: #ffffff; text-align: center;"><span><i class="fas fa-building"></i></span> Login </h4>
+				  <button type="button " class="close" data-dismiss="modal">&times;</button>
+				  
+				</div>
+				 <!-- Modal body -->
+				<div class="modal-body" style="padding:40px 50px;">
+				  <form role="form">
+					<div class="form-group">
+					  <label for="usrname">Companyname</label>
+					  <input type="text" class="form-control" id="com-name" placeholder="Enter email">
+					</div>
+					<div class="form-group">
+					  <label for="psw"> Password</label>
+					  <input type="password" class="form-control" id="com-psw" placeholder="Enter password">
+					</div>
+					<div class="checkbox">
+					  <label><input type="checkbox" value="" checked>Remember me</label>
+					</div>
+					  <button type="submit" class="btn btn-success btn-block"> Login</button>
+				  </form>
+				</div>
+				 <!-- Modal footer -->
+				<div class="modal-footer  ">
+				 <div class="col"> <p>Not a member? <a href="#">Sign Up</a></p></div>
+				  <div class="col"><p>Forgot <a href="#">Password?</a></p></div>
+				</div>
+			  </div>
+			  
+			</div>
+		  </div>
+		<!--................................. user signup..........................!-->
+		
+	<div class="modal fade" id="usersignup" role="dialog">
+			<div class="modal-dialog">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+				
+				 <!-- Modal Header -->
+				<div class="modal-header " style="background-color: #5cb85c; ">
+					<h4 style="font-size: 30px; color: #ffffff; text-align: center;"><span><i class="fas fa-user"></i></span> Sign Up </h4>
+				  <button type="button " class="close" data-dismiss="modal">&times;</button>
+				  
+				</div>
+				 <!-- Modal body -->
+				<div class="modal-body" style="padding:40px 50px;">
+				  <form role="form">
+					<div class="form-group row">
+					<div class="form-group col" style="display: inline-block;">
+					  <label for="firstname">First Name</label>
+					  <input type="text" class="form-control" id="first-name" placeholder="first name" name="f-name" required>
+					</div>
+					<div class="form-group col"style="display: inline-block;">
+					  <label for="lastname">Last Name</label>
+					  <input type="text" class="form-control" id="last-name" placeholder="last name" name="l-name" required>
+					</div>
+					</div>
+					<div class="form-group">
+					  <label for="usrname">Your Mail</label>
+					  <input type="text" class="form-control" id="user-mail" placeholder="Enter email" name="email" required>
+					</div>
+					<div class="form-group row">
+						<div class="form-group col">
+					  <label for="psw"> Password</label>
+					  <input type="password" class="form-control" id="user-psw" placeholder="Enter password" name="psw" required>
+						</div>
+						<div class="form-group col">
+					  <label for="psw">Re-enter Password</label>
+					  <input type="password" class="form-control" id="user-psw" placeholder="Re-enter password" name="psw-repeat" required>
+						</div>
+					</div>
+					<div >
+					     <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+					</div>
+					  <button type="submit" class="btn btn-success btn-block signupbtn"> Register</button>
+				  </form>
+				
+			  
+				</div>
+				</div>
+       
+			</div>
+	</div>
+	</body>       
 
 
 </html>
