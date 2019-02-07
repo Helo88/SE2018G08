@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>You Tour</title>
+
+		
+
+
+	<!-- Latest compiled and minified CSS -->
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+
+<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+
+
+<link rel="stylesheet" type="text/css" href="../css/offers.css">
+
+</head>
+<body>
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light " id="navigbar">
+  <a class="navbar-brand" href="#">You Tour</a>
+ 
+      <span class="navbar-toggler-icon"></span>
+      
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Offers</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+    </ul>
+    
+    <form class="form-inline my-2 my-lg-0" >
+      <div id="search-form">
+      <input class="form-control mr-sm-2" id="search-input" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" id="search-btn" type="submit">Search</button>
+       <button type="button" class="btn btn-outline-primary open-button" onclick="Userlogin()" >log in</button>
+       
+
+       <div class="user-popup" id="user-popup">
+       <form class="form-container">
+<button type="submit" class="userlogin-btn" onclick="openForm()">User</button>
+<button type="submit" class="userlogin-btn">Company</button>
+        
+       </div> 
+
+
+       <div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1 id="login">Login</h1>
+
+    <label for="email" class="popup-text"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required><br>
+
+    <label for="psw" class="popup-text"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required><br>
+    <br>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+     </div>
+    </form>
+  </div>
+</nav><br><br>
+
+<div class="form-div">
+<form class="form-inline">
+  <label class="form-labels" for="inlineFormInputName2">From</label>
+  <input type="text" class="form-control mb-2 mr-sm-2 input-from" id="inlineFormInputName2" placeholder="From">
+
+  <label class="form-labels" for="inlineFormInputGroupUsername2">To</label>
+  
+    <input type="text" class="form-control mb-2 mr-sm-2 input-to" id="inlineFormInputGroupUsername2" placeholder="To">
+  
+  <label class="form-labels" for="inlineFormInputName2">Where</label>
+  <input type="text" class="form-control mb-2 mr-sm-2 allinputs" id="inlineFormInputName2" placeholder="Where"><br>
+
+  <label class="form-labels" for="inlineFormInputName2">Budget: </label>
+
+  <label class="form-labels" for="inlineFormInputName2">Min</label>
+  <input type="text" class="form-control mb-2 mr-sm-2 allinputs" id="inlineFormInputName2" placeholder="$">	
+  <label class="form-labels" for="inlineFormInputName2">Max</label>
+  <input type="text" class="form-control mb-2 mr-sm-2 allinputs" id="inlineFormInputName2" placeholder="$">
+
+  <button type="submit" class="btn btn-primary mb-2" id="submit-form">Submit</button>
+</form>
+</div><br><br>
+
+<div class="Tours">
+<div class="row1">
+
+  <div class="col-sm-6 col-md-4 two-parts">
+  	<div id="part-one">
+    <div class="tour-item active" id="first-tour">
+    </div>
+</div>
+    <div id="part-two">
+      <div class="active ">
+        <h4>Tour Description</h4>
+  </div>
+    </div>
+  </div>
+
+ <div class="col-sm-6 col-md-4 ">
+  	<div id="part-one">
+    <div class=" tour-item" id="third-tour">
+    </div>
+</div>
+    <div id="part-two">
+      <div class=" ">
+        <h4>Tour Description</h4>
+  </div>
+    </div>
+  </div>
+
+<div class="col-sm-6 col-md-4 ">
+  	<div id="part-one">
+    <div class=" tour-item" id="second-tour">
+    </div>
+</div>
+    <div id="part-two">
+      <div class=" ">
+        <h4>Tour Description</h4>
+  </div>
+    </div>
+  </div>
+
+
+
+
+</div>
+
+
+<div class="row2">
+
+ <div class="col-sm-6 col-md-4 ">
+  	<div id="part-one">
+    <div class=" tour-item" id="fourth-tour">
+    </div>
+</div>
+    <div id="part-two">
+      <div class=" ">
+        <h4>Tour Description</h4>
+  </div>
+    </div>
+  </div>
+
+
+
+  <div class="col-sm-6 col-md-4 ">
+  	<div id="part-one">
+    <div class=" tour-item" id="fifth-tour">
+    </div>
+</div>
+    <div id="part-two">
+      <div class=" ">
+        <h4>Tour Description</h4>
+  </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4 ">
+  	<div id="part-one ">
+    <div class="tour-item" id="sixth-tour">
+    </div>
+</div>
+    <div id="part-two">
+      <div class="">
+        <h4>Tour Description</h4>
+  </div>
+    </div>
+  </div>
+
+</div>
+</div>
+	<!-- Latest compiled and minified JavaScript -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" src="../js/offers.js"></script>
+</body>
+</html>
