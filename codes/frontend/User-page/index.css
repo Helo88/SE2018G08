@@ -1,0 +1,149 @@
+#navigbar{
+	background-color: black;
+	opacity: 0.8;
+	font-family: 'ABeeZee';
+	font-size: 17px;
+}
+
+
+.navbar-text{
+	color: #FFD700; 
+	
+	font-family: 'ABeeZee';
+ 
+  
+}
+.text-edit
+{
+    font-family: 'Satisfy', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    
+}
+
+.nav-link{
+	color:#FFF !important;
+}
+
+
+
+.user-edit
+{
+    
+    width: 50px;
+    height:50px;
+
+}
+.dropdown-toggle:after
+{
+    display: none
+}
+.img-fluid
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+}
+.dropdown-menu
+{
+    position: absolute;
+    top: 100%;
+    left: -156%;
+    width:70px;
+    
+}
+.dropdown-item
+{
+    border-left:#000 1px solid;
+    width: 74px;
+    float: left;
+    margin-right: 1px;
+    padding: 0px 5px;
+    height: 100%
+}
+
+body{
+	background-image: url("image/CMYK-A-tour-guide-leads-a-group-from-a-cruise-here-for-the-day-around-the-Pyramids-of-Giza%20(1).jpg");
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+    background-size:1350px 900px
+}
+
+label{
+	color: white;
+}
+
+.form-div{
+
+	width: 100%;
+	height: 100px;
+	background-color:black;
+	opacity: 0.55;
+	position: absolute;
+	top: 100px;
+}
+
+.form-inline{
+	padding:10px;
+}
+.mr-sm-2{
+padding-left:20px;
+	margin-left: 20px;
+}
+
+.input-from{
+	padding-left:20px;
+	margin-left: 105px;
+}
+
+.input-to{
+	margin-left: 31px;
+}
+
+.form-labels{
+	padding-left :20px;
+	padding-right: 20px;
+}
+
+#submit-form{
+	margin-left: 160px;
+	margin-top: 10px;
+}
+
+.tour-row{
+	width: 100%;
+}
+
+.tour-item{
+	
+	height: 100px;
+	position: fixed;
+	top: 250px;
+
+}
+
+.account-edit
+{
+    font-family: 'ABeeZee';
+    font-size: 22px;
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link
+{
+    background-color: #EEE;
+    color: #000!important
+    
+}
+
+.table-travles{
+    display: none
+}
+.image-edit
+{
+    width: 200px;
+    border-radius: 3px;
+    box-shadow: 5px 5px 2px grey;
+    cursor: pointer
+}
