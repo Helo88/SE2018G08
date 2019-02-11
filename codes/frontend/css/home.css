@@ -3,16 +3,17 @@
 	background-color:#333333;
     position: relative;
     top: 0px;
-	padding-bottom: 3px;
-	padding-top: 3px;
+	padding-bottom: 6px;
+	padding-top: 6px;
 	min-width: 100%;
 }
 .navbar-brand{
 	color:#ff0000;
 	font-family: brush script mt ;
-	font-size:45px;
+	font-size:32px;
 	padding: 0px;
 	font-weight: bold;
+        font-family: 'Satisfy', cursive;
 	
 }
 
@@ -66,3 +67,17 @@
 #usersign  .modal-footer {
     background-color: #f9f9f9;
   }
+
+
+
+.link-edit
+{
+    font-family: 'ABeeZee';
+    font-size: 17px;
+    color: #bbb!important
+}
+
+.nav-edit
+{
+    opacity: .8
+}
