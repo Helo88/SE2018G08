@@ -4,7 +4,7 @@
                         });*/
 
 
-$(document).ready(function(){
+/*$(document).ready(function(){
 
   
 $(".dddd").click(function(){
@@ -17,4 +17,4 @@ $(".My-travel").click(function(){
     $(".dddd").show();
 })
 
-});
+});*/
