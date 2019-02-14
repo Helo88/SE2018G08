@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travel-details-form</title>
+
+		
+
+
+	<!-- Latest compiled and minified CSS -->
+
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./travel-details.css">
+
+
+<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/mine.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-dark " id="navigbar">
+  <a class="navbar-brand text-danger text-edit text-edit" href="index.html">You Tour</a>
+  
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Offers</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0 mr-3">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+    </form>
+      
+  </div>
+  
+</nav>
+    <section class="travel-details">
+        <div class="container w-50 border border-edit">
+            <div>
+                <h1 class="text-light">Travel Program</h1>
+            </div>
+            <form action="{% url 'CM:tourinfo' %}" method="post">{% csrf_token %}
+              <div class="form-group font-weight-bold text-light">
+                <label for="formGroupExampleInput">Date</label>
+                <input type="date" class="form-control w-50" name="date" id="date">
+              </div>
+              <div class="form-group font-weight-bold text-light">
+                <label for="formGroupExampleInput2">Place</label>
+                <input type="text" class="form-control w-50" name="place" id="place">
+              </div>
+              <div class="form-group font-weight-bold text-light">
+                <label for="formGroupExampleInput2">Time</label>
+                <input type="time" class="form-control w-50" name="time" id="time">
+              </div>
+                <input type="text" class="form-control w-50" name="id" id="id" hidden value=" {{id}} ">
+              <button type="submit" class="btn btn-dark">Add</button>
+            </form>
+        </div>
+    </section>
+    
+
+    
+</body>
+</html>
