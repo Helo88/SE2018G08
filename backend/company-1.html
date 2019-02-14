@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>You Tour</title>
+
+		
+
+
+	<!-- Latest compiled and minified CSS -->
+
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./index.css">
+
+
+<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/mine.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-dark " id="navigbar">
+  <a class="navbar-brand text-danger text-edit text-edit" href="index.html">You Tour</a>
+  
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Offers</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0 mr-3">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+    </form>
+      
+  </div>
+  
+</nav>
+    
+    <section class="company-page-2 account-edit m-5">
+        <div class="row">
+              <div class="col-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link active" id="v-pills-home-tab" href="#v-pills-home" data-toggle="pill" role="tab" aria-controls="v-pills-home" aria-selected="true">Tours</a>
+                  <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Settings</a>
+                  <a class="nav-link" id="v-pills-messages-tab" href="#" role="tab" aria-controls="v-pills-messages" aria-selected="false">Logout</a>
+                  
+                </div>
+              </div>
+              <div class="col-9">
+                <div class="tab-content" id="v-pills-tabContent">
+  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+      <table class="table text-white table-edit">
+          <thead>
+            <tr>
+              <th scope="col">Tour Title</th>
+              <th scope="col">Data</th>
+              <th scope="col">Statu</th>
+              <th scope="col">Service</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Luxor temple</th>
+              <td>22/10/2019</td>
+              <td>inactvie</td>
+              <td>edit</td>
+            </tr>
+            <tr>
+              <th scope="row">Luxor temple</th>
+              <td>22/10/2019</td>
+              <td>inactvie</td>
+              <td>edit</td>
+            </tr>
+            <tr>
+              <th scope="row">Luxor temple</th>
+              <td>22/10/2019</td>
+              <td>inactvie</td>
+              <td>edit</td>
+            </tr>
+            <tr>
+              <th scope="row">Luxor temple</th>
+              <td>22/10/2019</td>
+              <td>inactvie</td>
+              <td>edit</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="buttons mx-auto  mt-3">
+            <button type="button" class="btn btn-default btn-lg  bg-light" id="myBtn"><img src="image/Button-Add-3-128.png" width="35px" height="35px"></button>
+            <button class="remove"><img src="image/cccc.png" class="img-fluid"></button>
+        </div>
+    </div>
+                  <div class="tab-pane fade text-white" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">Settings......</div>
+                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+                  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+                </div>
+              </div>
+            </div>
+        
+    </section>
+    <section class="hide-form">
+        
+        <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <h4><span class="glyphicon glyphicon-lock"></span>Add Tour</h4>
+        </div>
+        <div class="modal-body text-dark" style="padding:40px 50px;">
+          <form role="form" action="{% url 'CM:addtour' %}" method="post">{% csrf_token %}
+            <div class="form-group">
+              <label for="usrname" class="text-dark"><span class="glyphicon glyphicon-user text-dark"></span>Tour Name</label>
+              <input type="text" class="form-control" id="usrname" name="name" required>
+            </div>
+             <div class="form-group">
+              <label for="usrname" class="text-dark"><span class="glyphicon glyphicon-user text-dark"></span>Tour Place</label>
+              <input type="text" class="form-control" id="usrname" name="dest" required>
+            </div>
+            <div class="form-group">
+              <label for="psw" class="text-dark"><span class="glyphicon glyphicon-eye-open text-dark"></span>Start Date</label>
+              <input type="date" class="form-control" id="psw" name="start-date" required>
+            </div>
+            <div class="form-group">
+              <label for="psw" class="text-dark"><span class="glyphicon glyphicon-eye-open text-dark"></span>End Date</label>
+              <input type="date" class="form-control" id="psw" name="end-date" required>
+            </div>
+            <div class="form-group">
+              <label for="psw" class="text-dark"><span class="glyphicon glyphicon-eye-open text-dark"></span>Cost</label>
+              <input type="number" class="form-control" id="psw" name="cost" required>
+            </div>
+            
+              <button type="submit" class="btn btn-success m-auto"><span class="glyphicon glyphicon-off"></span> Add</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+
+ 
+    </section>
+    
+</body>
+</html>
