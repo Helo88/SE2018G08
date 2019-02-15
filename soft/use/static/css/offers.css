@@ -1,0 +1,157 @@
+
+body{
+	background-image: url("../img/orig.jpg");
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.mr-sm-2{
+padding-left:20px;
+	margin-left: 20px;
+}
+
+.input-from{
+	padding-left:20px;
+	margin-left: 105px;
+}
+
+.input-to{
+	margin-left: 31px;
+}
+
+.form-labels{
+	padding-left :20px;
+	padding-right: 20px;
+}
+
+#submit-form{
+	margin-left: 160px;
+	margin-top: 10px;
+}
+
+
+.row1{
+	margin: 20px;
+	margin-left: 130px;
+	padding:20px;
+	padding-bottom: 20px;
+}
+
+.row2{
+	margin: 20px;
+	margin-left: 130px;
+	padding:20px;
+	margin-bottom: 20px;
+}
+.tour-item{
+	
+	height: 150px;
+	text-align: center;
+	width: 80%;
+	align-self: center;
+
+}
+
+#first-tour{
+	background-image: url("../img/1.jpg");
+	background-repeat: no-repeat;
+  
+  background-position: center;
+   border-radius: 20px;
+}
+
+#second-tour{
+	background-image: url("../img/2.jpg");
+background-repeat: no-repeat;
+  
+  background-position: center;
+  border-radius: 20px;	
+}
+
+#third-tour{
+		background-image: url("../img/3.jpg");
+background-repeat: no-repeat;
+  
+  background-position: center;
+  border-radius: 20px;
+}
+
+#fourth-tour{
+	background-image: url("../img/4.jpg");
+background-repeat: no-repeat;
+  
+  background-position: center;
+  border-radius: 20px;
+ 
+}
+
+#fifth-tour{
+	background-image: url("../img/5.jpg");
+background-repeat: no-repeat;
+  
+  background-position: center;
+ border-radius: 20px;
+}
+
+#sixth-tour{
+	background-image: url("../img/6.jpg");
+background-repeat: no-repeat;
+  
+  background-position: center;
+ border-radius: 20px;
+
+}
+
+#part-one{
+	margin-bottom: 0px;
+
+}
+
+
+#part-two{
+	background-color: black;
+	width: 80%;
+	height: 40%;
+	opacity: 0.78;	
+	margin-bottom: 20px;
+	margin-top: 0px;
+}
+
+h4{
+color: #FFD700; 
+	
+	font-family: 'ABeeZee';
+	align-self: center;
+	text-align: center;
+	}
+
+	.two-parts{
+	}
+
+
+	{box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  
+
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+ 
+  
+
+}
+
+/* The popup form - hidden by default */
+
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  border: black solid;
+
+}
+

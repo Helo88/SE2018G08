@@ -1,0 +1,66 @@
+/*...........nav bar .............*/
+.navbar {
+	background-color:#333333;
+    position: relative;
+    top: 0px;
+    min-width: 100%;
+	padding-bottom: 3px;
+	padding-top: 3px;		
+}
+.navbar-brand{
+	color:#ff0000;
+	font-family: brush script mt ;
+	font-size:45px;
+	padding: 0px;
+	font-weight: bold;
+	
+}
+
+	
+    
+    /*.......................mid....................................*/
+
+    #about1 {
+    text-align: center;
+    margin: auto;
+   max-width:60%;
+    }
+    #about1 h1{
+    color: red;}
+ #about2 {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 200px;
+   max-width:60%;
+    }
+    #about2 h1{
+    color: red;}
+    #about3{
+		max-width:30%;
+    text-align: center;
+    margin: auto;
+	background-color: blue;
+	margin-bottom: 200px;}
+     #about3 h1{
+    color: #ffffff;}
+	.list-unstyled li{display: inline-block;
+	margin-left: 15px;}
+	.list-unstyled li a{color: #ffffff;
+
+	padding-bottom: 20px;}
+	.list-unstyled{
+		padding-bottom: 20px;
+	font-size: 30px;}
+    /*......................footer............................*/
+    
+    footer.container{
+        align-self: center;
+        background-color: #333333;
+    color: #ffffff;
+   position: fixed;
+    bottom: 0px;
+    align-self: center;
+    max-width: 100%;
+    }
+    footer p{margin-bottom: 5px;}
+    

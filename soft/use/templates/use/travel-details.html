@@ -1,0 +1,36 @@
+
+
+{%  extends 'use/Bas.html' %}
+{%  load staticfiles %}
+{% block body %}
+
+
+
+
+
+
+
+<section class="travel-details">
+        <div class="container w-50 border border-edit">
+            <div>
+                <h1 class="text-light">Travel Program</h1>
+            </div>
+            <form action="{% url 'use:tourinfo' %}" method="post">{% csrf_token %}
+              <div class="form-group font-weight-bold text-light">
+                <label for="formGroupExampleInput">Date</label>
+                <input type="date" class="form-control w-50" name="date" id="date">
+              </div>
+              <div class="form-group font-weight-bold text-light">
+                <label for="formGroupExampleInput2">Place</label>
+                <input type="text" class="form-control w-50" name="place" id="place">
+              </div>
+              <div class="form-group font-weight-bold text-light">
+                <label for="formGroupExampleInput2">Time</label>
+                <input type="time" class="form-control w-50" name="time" id="time">
+              </div>
+                <input type="text" class="form-control w-50" name="id" id="id" hidden value=" {{id}} ">
+              <button type="submit" class="btn btn-dark">Add</button>
+            </form>
+        </div>
+    </section>
+{% endblock %}

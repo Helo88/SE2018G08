@@ -1,0 +1,41 @@
+{% extends 'use/Bas.html' %}
+
+
+{% load crispy_forms_tags %}
+
+{% block  body %}
+
+<div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <h4><span class="glyphicon glyphicon-lock"></span>Add Tour</h4>
+        </div>
+        <div class="modal-body text-dark" style="padding:40px 50px;">
+          <form method="post"> {% csrf_token %}
+              {{ form|crispy }}
+              <div class="modal-footer">
+          <a href="{% url 'use:tours' %}" role="button" type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> save</a>
+
+        </div>
+          </form>
+        <
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

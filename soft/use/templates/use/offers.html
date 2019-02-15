@@ -1,0 +1,66 @@
+
+{% extends 'use/Bas.html' %}
+
+
+{% load crispy_forms_tags %}
+
+{% block body %}
+
+ {%  load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/offers.css' %}">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+
+<div class="form-div" >
+<form class="form-inline" action="{% url 'use:filter' %}" method="get">{% csrf_token %}
+  <label class="form-labels" for="inlineFormInputName2">Date</label>
+  <input type="date" class="form-control mb-2 mr-sm-2 input-from" id="inlineFormInputName1" placeholder="From" name="from" required >
+
+<label class="form-labels" for="inlineFormInputGroupUsername2">To</label>
+
+    <input type="date" class="form-control mb-2 mr-sm-2 input-to" id="inlineFormInputGroupUsername2" placeholder="To" name="to" required>
+
+  <label class="form-labels" for="inlineFormInputName2">Where</label>
+  <input type="text" class="form-control mb-2 mr-sm-2 allinputs" id="inlineFormInputName2" placeholder="Where" name="dest" required><br>
+
+  <label class="form-labels" for="inlineFormInputName2">Budget: </label>
+
+  <label class="form-labels" for="inlineFormInputName2">Min</label>
+  <input type="number" class="form-control mb-2 mr-sm-2 allinputs" id="inlineFormInputName3" placeholder="$" name="min" required>
+  <label class="form-labels" for="inlineFormInputName2">Max</label>
+  <input type="number" class="form-control mb-2 mr-sm-2 allinputs" id="inlineFormInputName4" placeholder="$" name="max" required>
+
+  <button type="submit" class="btn btn-primary mb-2" id="submit-form">Submit</button>
+</form>
+</div><br><br>
+
+<div class="Tours">
+<div class="row1">
+
+{% for t in all %}
+  <div class="col-sm-6 col-md-4 two-parts">
+  	<div id="part-one">
+    <div class="tour-item active" id="first-tour">
+    </div>
+</div>
+
+    <div id="part-two">
+      <div class="active ">
+        <h4>
+           <a href="{% url 'use:tourdetails' %} tourid={{ t.id }}"></a></a>{{ t.name }}
+
+        </h4>
+  </div>
+    </div>
+  </div>
+    {% endfor %}
+
+
+</div>
+</div>
+
+
+{% endblock %}

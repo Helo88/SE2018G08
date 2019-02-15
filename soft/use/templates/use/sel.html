@@ -1,0 +1,25 @@
+{% extends 'use/Bas.html' %}
+
+
+{% load crispy_forms_tags %}
+
+{% block body %}
+
+
+<h2> <font color="#006400">Sign up for a free account </font> </h2>
+<br>
+  <p class="lead">Select below the type of account you want to create</p>
+  <a href="{% url 'use:register' %}"class="btn btn-outline-success my-2 my-sm-8 col"   role="button"> <i>I'm a customer</i></a>
+  <a href="{% url 'use:regcu' %}"class="btn btn-outline-success my-2 my-sm-8 col"  role="button"><i>I'm a company</i></a>
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+
