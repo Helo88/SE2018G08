@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>You Tour</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+	<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+
+	<link rel="stylesheet" type="text/css" href="../css/tour.css">
+
+</head>
+<body>
+
+
+	<h2>{{tour.name}}</h2>
+<div>
+	<label>Company:{{tour.company}}</label><br><br>
+	<label>Destination:{{tour.dest}}</label><br><br>
+	<label>Cost:{{tour.cost}}$</label><br><br>
+	<label>Start date:{{tour.start_date}}</label><br><br>
+	<label>End date:{{tour.end_date}}</label><br><br>
+
+
+</div>
+
+<table>
+	<tr>
+	<th>DateTime</th>
+	<th>Place</th>
+</tr>
+	{% for ti in tourinfo %}
+	<tr>
+	<td>{{ti.time}}</td>
+	<td>{{ti.text}}</td>
+</tr>
+	{% endfor %}
+
+
+	
+
+
+</table>
+
+</body>
+</html>
