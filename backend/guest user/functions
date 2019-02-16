@@ -1,0 +1,35 @@
+def search(request):
+    if request.method == 'GET': # this will be GET now
+        name =  request.GET.get('search') # do some research what it does
+        try:
+            status = Tour.objects.filter(name__icontains=name)
+            return render( request,"use/offers.html",{"all":status} )
+        except:
+           return HttpResponse("this tour is n't valid")
+
+
+    else:
+        return render(request,"use/offers.html",{})
+        
+        
+    def filter(request):
+    if request.method == 'GET':
+        date1 = request.GET.get('from')
+        date2 = request.GET.get('to')
+        dest = request.GET.get('dest')
+        min = request.GET.get('min')
+        max = request.GET.get('max')
+        try:
+            all = Tour.objects.filter(start_date__gt=date1, start_date__lt=date2, dest__icontains=dest, cost__lt=max,
+                                      cost__gt=min)
+            return render(request, 'use/offers.html', {'all': all})
+        except:
+            return HttpResponse("this tour is n't valid")
+
+    else:
+        return render(request, "use/offers.html", {})
+
+def tours(request):
+    all = Tour.objects.all()
+
+    return render(request, 'use/offers.html',{'all':all,})    
