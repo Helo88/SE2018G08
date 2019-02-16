@@ -142,7 +142,7 @@ def changepassword(request):
 
 
 class addtour(CreateView):
-    template_name = 'use/Trav.html'
+    template_name = 'CM/Trav.html'
 
     def get(self, request):
         form = Home
@@ -181,7 +181,7 @@ def edittour(request, pk):
             return redirect('use:tours', pk=post.pk)
 
         else:
-            return render(request, 'use/editTrav.html', {'form': form})
+            return render(request, 'CM/editTrav.html', {'form': form})
 
 
 
