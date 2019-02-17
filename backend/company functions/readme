@@ -3,8 +3,13 @@ this folder contains company fucnstions
 -sign up with email confirmation
 -login
 -logout
+-cahnge password
 -create profile
 -edit profile
 -add tour
 -edit tour 
 // to enable django 1.9 to send emails it a must to allow third party access from your gmail account security settings 
+in the final website fucnctions i add some other functions
+-add tour paln 
+-edit any day of tour plan
+-delete any day
