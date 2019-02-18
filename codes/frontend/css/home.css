@@ -1,3 +1,5 @@
+html {height: 100%;}
+body{height: 100%;}
 /*...........nav bar .............*/
 .navbar {
 	background-color:#333333;
@@ -6,6 +8,8 @@
 	padding-bottom: 6px;
 	padding-top: 6px;
 	min-width: 100%;
+	height: 10%;
+	max-height: 15%;
 }
 .navbar-brand{
 	color:#ff0000;
@@ -19,10 +23,10 @@
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
-#myCarousel{margin-bottom: 0px;height: 33rem;}
+#myCarousel{margin-bottom: 0px;height: 85%;}
 /* Carousel base class */
 .carousel {
-  margin-bottom: 4rem;
+  margin-bottom: 0px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -40,7 +44,7 @@
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 33rem;
+  height: 100%;
 }
 /*......................footer............................*/
     
@@ -48,10 +52,11 @@
         align-self: center;
         background-color: #333333;
     color: #ffffff;
-   position: relative;
-    bottom: 0px;
+   
     align-self: center;
     max-width: 100%;
+	height: 5%;
+	max-height: 7%;
     }
     footer p{margin-bottom: 0px;}
 
